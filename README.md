@@ -1,6 +1,6 @@
 # Ansible Role: Git
 
-[![Build Status](https://travis-ci.org/geerlingguy/ansible-role-git.svg?branch=master)](https://travis-ci.org/geerlingguy/ansible-role-git)
+[![Build Status](https://travis-ci.org/ocean/ansible-role-git.svg?branch=master)](https://travis-ci.org/ocean/ansible-role-git)
 
 Installs Git, a distributed version control system, on any RHEL/CentOS or Debian/Ubuntu Linux system.
 
@@ -44,7 +44,7 @@ None.
 
     - hosts: servers
       roles:
-        - { role: geerlingguy.git }
+        - { role: ocean.git }
 
 ## License
 
@@ -52,4 +52,6 @@ MIT / BSD
 
 ## Author Information
 
-This role was created in 2014 by [Jeff Geerling](http://www.jeffgeerling.com/), author of [Ansible for DevOps](https://www.ansiblefordevops.com/).
+This role was originally created in 2014 by [Jeff Geerling](http://jeffgeerling.com/), author of [Ansible for DevOps](http://ansiblefordevops.com/).
+
+Forked by [@ocean](https://twitter.com/ocean) to remove the `subversion-perl` package requirement when building from source, as it no longer exists and was breaking my playbook runs on my Oracle Linux 7.2 box.
