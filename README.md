@@ -1,6 +1,6 @@
 # Ansible Role: Git
 
-[![Build Status](https://travis-ci.org/geerlingguy/ansible-role-git.svg?branch=master)](https://travis-ci.org/geerlingguy/ansible-role-git)
+[![Build Status](https://travis-ci.org/ocean/ansible-role-git.svg?branch=master)](https://travis-ci.org/ocean/ansible-role-git)
 
 Installs Git, a distributed version control system, on any RHEL/CentOS or Debian/Ubuntu Linux system.
 
@@ -44,7 +44,7 @@ None.
 
     - hosts: servers
       roles:
-        - { role: geerlingguy.git }
+        - { role: ocean.git }
 
 ## License
 
@@ -52,4 +52,6 @@ MIT / BSD
 
 ## Author Information
 
-This role was created in 2014 by [Jeff Geerling](http://jeffgeerling.com/), author of [Ansible for DevOps](http://ansiblefordevops.com/).
+This role was originally created in 2014 by [Jeff Geerling](http://jeffgeerling.com/), author of [Ansible for DevOps](http://ansiblefordevops.com/).
+
+I've forked it to remove the `subversion-perl` package requirement when building from source, as it no longer exists.

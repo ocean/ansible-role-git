@@ -2,9 +2,9 @@
 dependencies: []
 
 galaxy_info:
-  author: geerlingguy
-  description: Git version control software
-  company: "Midwestern Mac, LLC"
+  author: ocean
+  description: "Git version control software, forked from geerlingguy's version."
+  company: "FYG"
   license: "license (BSD, MIT)"
   min_ansible_version: 1.9
   platforms:
