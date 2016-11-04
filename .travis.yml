@@ -15,41 +15,41 @@ env:
     GIT_VERSION: 2.9.3
 
   # Test package install on all supported OSes.
-  - distro: centos7
-    init: /usr/lib/systemd/systemd
-    run_opts: "--privileged --volume=/sys/fs/cgroup:/sys/fs/cgroup:ro"
-    playbook: test.yml
-    GIT_VERSION: 1.8.3.1
-  - distro: centos6
-    init: /sbin/init
-    run_opts: "--privileged"
-    playbook: test.yml
-    GIT_VERSION: 1.7.1
-  - distro: fedora24
-    init: /usr/lib/systemd/systemd
-    run_opts: "--privileged --volume=/sys/fs/cgroup:/sys/fs/cgroup:ro"
-    playbook: test.yml
-    GIT_VERSION: 2.7.4
-  - distro: ubuntu1604
-    init: /lib/systemd/systemd
-    run_opts: "--privileged --volume=/sys/fs/cgroup:/sys/fs/cgroup:ro"
-    playbook: test.yml
-    GIT_VERSION: 2.7.4
-  - distro: ubuntu1404
-    init: /sbin/init
-    run_opts: "--privileged"
-    playbook: test.yml
-    GIT_VERSION: 1.9.1
-  - distro: ubuntu1204
-    init: /sbin/init
-    run_opts: "--privileged"
-    playbook: test.yml
-    GIT_VERSION: 1.7.9.5
-  - distro: debian8
-    init: /lib/systemd/systemd
-    run_opts: "--privileged --volume=/sys/fs/cgroup:/sys/fs/cgroup:ro"
-    playbook: test.yml
-    GIT_VERSION: 2.1.4
+  # - distro: centos7
+  #   init: /usr/lib/systemd/systemd
+  #   run_opts: "--privileged --volume=/sys/fs/cgroup:/sys/fs/cgroup:ro"
+  #   playbook: test.yml
+  #   GIT_VERSION: 1.8.3.1
+  # - distro: centos6
+  #   init: /sbin/init
+  #   run_opts: "--privileged"
+  #   playbook: test.yml
+  #   GIT_VERSION: 1.7.1
+  # - distro: fedora24
+  #   init: /usr/lib/systemd/systemd
+  #   run_opts: "--privileged --volume=/sys/fs/cgroup:/sys/fs/cgroup:ro"
+  #   playbook: test.yml
+  #   GIT_VERSION: 2.7.4
+  # - distro: ubuntu1604
+  #   init: /lib/systemd/systemd
+  #   run_opts: "--privileged --volume=/sys/fs/cgroup:/sys/fs/cgroup:ro"
+  #   playbook: test.yml
+  #   GIT_VERSION: 2.7.4
+  # - distro: ubuntu1404
+  #   init: /sbin/init
+  #   run_opts: "--privileged"
+  #   playbook: test.yml
+  #   GIT_VERSION: 1.9.1
+  # - distro: ubuntu1204
+  #   init: /sbin/init
+  #   run_opts: "--privileged"
+  #   playbook: test.yml
+  #   GIT_VERSION: 1.7.9.5
+  # - distro: debian8
+  #   init: /lib/systemd/systemd
+  #   run_opts: "--privileged --volume=/sys/fs/cgroup:/sys/fs/cgroup:ro"
+  #   playbook: test.yml
+  #   GIT_VERSION: 2.1.4
 
 before_install:
   # Pull container.
