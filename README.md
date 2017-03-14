@@ -52,6 +52,6 @@ MIT / BSD
 
 ## Author Information
 
-This role was originally created in 2014 by [Jeff Geerling](http://jeffgeerling.com/), author of [Ansible for DevOps](http://ansiblefordevops.com/).
+This role was originally created in 2014 by [Jeff Geerling](https://jeffgeerling.com/), author of [Ansible for DevOps](https://ansiblefordevops.com/).
 
 Forked by [@ocean](https://twitter.com/ocean) to remove the `subversion-perl` package requirement when building from source, as it no longer exists and was breaking my playbook runs on my Oracle Linux 7.2 box.
